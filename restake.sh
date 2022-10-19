@@ -1,6 +1,6 @@
 #!/bin/bash
 for (( ;; )); do
-  echo -e "\033[0;32mCollecting rewards!\033[0m"
+        echo -e "\033[0;32mCollecting rewards!\033[0m"
 	uptickd tx distribution withdraw-rewards uptickvaloper1z5hnta9st50gkftu05xkmcl66eeuczu5gktlk0 --from=Zaragossa --commission --chain-id=$UPTICK_CHAIN_ID --fees=250auptick --yes
 	echo -e "\033[0;32mWaiting 30 seconds before requesting balance\033[0m"
 	sleep 30
